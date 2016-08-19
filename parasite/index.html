@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>Parasite for Firefox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {
+      margin: 0 auto;
+      max-width: 40rem;
+      padding: 1rem;
+    }
+    figure {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="_assets/parasite.png" alt="Parasite logo"/>
+    <h1>Parasite for Firefox</h1>
+    <p><em>Move from host to host</em></p>
+  </header>
+
+  <p>Parasite is a simple Firefox Web development extension that enables switching the same page between hosting environments. In other words, open the same file path on a different domain name. Useful when working on a Web project that has multiple hosts/staging servers.</p>
+
+  <h2>For example:</h2>
+
+  <ol>
+    <li>Browse your live website: http://www.your-website.com/about/my-page.html</li>
+    <li>Select another environment from the host list, e.g. 'LOCAL'</li>
+    <li>Firefox then opens the same page on the selected host: http://localhost/about/my-page.html</li>
+  </ol>
+
+
+  <h2>Features:</h2>
+  <ul>
+    <li>Hold CTRL to open in a new tab.</li>
+    <li>Hold SHIFT to open in a new window.</li>
+    <li>Label and re-order hosts as required.</li>
+    <li>Query string parameters and hashes supported.</li>
+    <li>Add as many hosts as you like in the options. Currently only supports one project (multiple projects available in future version).</li>
+  </ul>
+
+  <p>Many more features to come!</p>
+
+  <figure>
+    <a href="_assets/parasite-tool.png"><img src="_assets/parasite-tool.png" alt="Tool"/></a>
+    <figcaption>Click the Parasite toolbar button to show a list of hosts for your project</figcaption>
+  </figure>
+  <figure>
+    <a href="_assets/parasite-options.png"><img src="_assets/parasite-options.png" alt="Options"/></a>
+    <figcaption>Add as many hosts as you need in the options</figcaption>
+  </figure>
+
+
+  <p>Available now on <a href="https://addons.mozilla.org/en-US/firefox/addon/parasite/">Mozilla Add-ons site</a>.</p>
+
+  <p>Follow <a href="http://twitter.com/parasiteaddon" title="Follow parasiteaddon on Twitter">@parasiteaddon</a></p>
+
+  <h2>Change log:</h2>
+  <h3>0.2.6 - <em>2011-08-17</em></h3>
+  <!--<p><strong>Currently under review by Mozilla - until then you can <a href="parasite-0.2.6.xpi">download from here</a>.</strong></p>-->
+  <ul>
+    <li>FIX - supports Firefox 6.0.</li>
+  </ul>
+  <h3>0.2.5 - <em>2011-07-07</em></h3>
+  <ul>
+    <li>FIX - problem where customised nav-bar was reset to default - sorry for the inconvenience.</li>
+    <li>NEW - supports Firefox 5.0.</li>
+    <li>NEW - supports Firefox on Linux.</li>
+    <li>CHANGE - now uses native Gecko JSON methods.</li>
+    <li>NEW - auto-complete from browser location history on host field.</li>
+  </ul>
+  <h3>0.2.4 - <em>2011-06-07</em></h3>
+  <ul>
+    <li>FIX - Actually preserves the query string and hash fragments.</li>
+    <li>FIX - Identifies current host in tool list using whole protocol (when exists) and hostname.</li>
+    <li>NEW - Parasite logo/icons.</li>
+    <li>NEW - Opens host options when click if none exist.</li>
+    <li>NEW - Opens host when on about: pages (no longer disabled).</li>
+  </ul>
+  <h3>0.2.3 - <em>2011-05-30</em></h3>
+  <ul>
+    <li>NEW - support for any protocol - or none.</li>
+    <li>NEW - auto-complete from browser location history on host field.</li>
+  </ul>
+
+</body>
+</html>
